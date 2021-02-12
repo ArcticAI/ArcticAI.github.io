@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #26262A;
+}
+
+body .poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+body .roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+body .ptsans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body .barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
+body .top {
+  background-color: #19181A;
+}
+
+body .main {
+  font-size: 70px;
+}
+
+body .arctic {
+  color: #0EDCF8;
+}
+
+body .harctic:hover {
+  color: #0EDCF8;
+}
+
+body .ccc {
+  color: #CCCCCC;
+}
+
+body .botonmain {
+  border: solid 3px #0EDCF8;
+  font-family: 'Barlow', sans-serif;
+  color: #0EDCF8;
+  font-weight: bold;
+  outline: none;
+}
+
+body .botonmain:hover {
+  background-color: #0EDCF8;
+  cursor: pointer;
+  color: #26262A;
+  font-weight: bold;
+}
+
+body .aboutme {
+  width: 900px;
+  height: 500px;
+}
+
+body .projects {
+  width: 900px;
+  height: 540px;
+}
+
+body .arcborder {
+  border: solid 3px #0EDCF8;
+}
+
+body .bordershadow {
+  -webkit-box-shadow: 0px 0px 500px 0px black;
+          box-shadow: 0px 0px 500px 0px black;
+}
+
+body .iconoportfolio {
+  width: 500px;
+  height: 400px;
+}
+
+body #aboutme {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 21px;
+}
+
+body #aboutme h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+}
+
+body #aboutme .totop {
+  font-family: 'Barlow',sans-serif;
+  font-size: 18px;
+}
+
+body #projects {
+  font-family: 'Montserrat',sans-serif;
+  font-size: 15px;
+}
+
+body #projects h2 {
+  font-family: 'Dancing Script',cursive;
+  font-size: 40px;
+}
+
+body #projects h4 {
+  font-family: 'Poppins',sans-serif;
+  font-size: 16px;
+}
+
+body #projects .project {
+  border-bottom: 1px solid #0EDCF8;
+}
+
+body #projects .totop {
+  font-family: 'Barlow',sans-serif;
+  font-size: 18px;
+}
+
+body #projects .allprojects {
+  margin-top: -1rem;
+}
+
+body #skills .tarjeta {
+  height: 550px;
+  width: 280px;
+  background-color: #26262A;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 20px;
+}
+
+body #skills .tarjeta h4 {
+  font-family: 'Dancing Script',cursive;
+  font-size: 40px;
+}
+
+body #contactform .formulario {
+  border: 3px solid #0EDCF8;
+  width: 500px;
+}
+
+body .totop {
+  font-family: 'Barlow',sans-serif;
+  font-size: 18px;
+}
+
+body .skillstotop {
+  margin-top: -6rem;
+}
+/*# sourceMappingURL=styles.css.map */

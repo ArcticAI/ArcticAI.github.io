@@ -1,0 +1,657 @@
+// $texto:#6F6E70;
+$texto:#ccc;
+// $resaltado: #3FA5A7;
+$resaltado: #36787B;
+
+*{
+    color: white;
+    margin: 0px ;
+    padding: 0px ;
+}
+
+    // FUENTES
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #26262A;
+    #landing{
+        height: 100%;
+        width: 100%;
+        header{
+            background-color: #19181A;
+            height: 60px;
+            display: flex;
+    
+            h1{
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    text-decoration: none;
+                    width: 280px;
+                    font-size: 34px;
+                    justify-content: center;
+                    margin-left: 30px;
+                    color: $texto
+                }
+            }
+            nav{
+                width: 800px;
+                margin: 0px;
+                ul{
+                    margin-left: 455px;
+                    align-items: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 650px;
+                    height: 60px;
+                    li{
+                        list-style: none;
+                        a{
+                            justify-content: center;
+                            text-decoration: none;
+                            color: $texto;
+                            font-size: 24px;
+                            font-family: 'Roboto', sans-serif;
+                        }
+                        a:hover{
+                            color: $resaltado;
+                        }
+                    }
+                }
+            }
+        }
+        #sublanding{
+            display: flex;
+            justify-content: space-between;
+            #contenedorpresentacion{
+                display: block;
+                margin-top: 130px;
+                height: 335px;
+                width: 463px;
+                margin-left: 150px;
+                #resaltado{
+                    color: $resaltado;
+                }
+                .presentacion{
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 70px;
+                }
+                #presentacionsub{
+                    font-family: 'Barlow', sans-serif;
+                    color: $texto;
+                    font-size: 34px;
+                }
+            }
+    
+            #logo{
+                display: block;
+                margin-right: 100px;
+                margin-top: 60px;
+                max-width: 45%;
+                max-height: 45%;
+                opacity: 0.65;
+            }
+
+            #redes{
+                width: 300px;
+                height: 115px;
+                margin: 0px;
+                display: flex;
+                #github{
+                    width: 40px;
+                    height: 40px;
+                    border: 0px;
+                    align-self: center;
+                    margin-top: 67px;
+                    margin-left: 30px;
+                    -webkit-transition: -webkit-transform .5s ease-in-out;
+                    transition:         transform .5s ease-in-out;
+                }
+                #github:hover{
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                #linkedin{
+                    width: 40px;
+                    height: 40px;
+                    border: 0px;
+                    align-self: center;
+                    margin-top: 67px;
+                    margin-left: 30px;
+                    -webkit-transition: -webkit-transform .5s ease-in-out;
+                    transition:         transform .5s ease-in-out;
+                }
+                #linkedin:hover{
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                #kaggle{
+                    width: 40px;
+                    height: 40px;
+                    border: 0px;
+                    align-self: center;
+                    margin-top: 67px;
+                    margin-left: 30px;
+                    -webkit-transition: -webkit-transform .5s ease-in-out;
+                    transition:         transform .5s ease-in-out;
+                }
+                #kaggle:hover{
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+                #buttonwraper{
+                    height: 150px;
+                    margin-left: 70px;
+                    .button{
+                        float: right;
+                        width: 180px;
+                        margin-top: 50px;
+                        height: 60px;
+                        background-color: transparent;
+                        border: solid 3px $resaltado;
+                        border-radius: 7px;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 20px;
+                        color: $resaltado;
+                    }
+                    .button:hover{
+                        background-color: $resaltado;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    #myprojects{
+        position: relative;
+        display: block;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        #myprojectstitle{
+            position: absolute;
+            z-index: 2;
+            left: 140px;
+            top: 165px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 127px;
+            color: $texto;
+            opacity: 20%;
+        }
+
+        #myprojectswrap{
+            position: absolute;
+            z-index: 3;
+            left: 300px;
+            top: 300px;
+            height: 570px;
+            width: 900px;
+            background-color: #26262A;
+            box-shadow: 0px 0px 300px 40px black;
+            border-radius: 20px;
+            text-align: center;
+
+            #lastprojects{
+                font-family: 'Dancing Script', cursive;
+                color: $resaltado;
+                font-size: 40px;
+                margin-top: 10px;
+            }
+
+
+
+            #projectlist{
+                margin: 0px auto;
+                background-color: #26262A;
+                height: 420px;
+                width: 800px;
+                margin-top: 20px;
+                .project{
+                    background-color: #26262A;
+                    width: 800px;
+                    height: 100px;
+                    text-align: start;
+                    border-bottom: 1px solid $resaltado;
+                    a{
+                        text-decoration: none;
+                        .projecttitle{
+                            color: $resaltado;
+                            font-family: 'Poppins', sans-serif;
+                        }
+                        .projecttitle:hover{
+                            color: white;
+                        }
+                    }
+                    .projectdescription{
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 15px;
+                    }
+                    .togithub{
+                        text-decoration: none;
+                        color: $resaltado;
+                        float: right;
+                        font-size: 20px;
+                    }
+                    .togithub:hover{
+                        color: white;
+                    }
+                    .tokernel{
+                        text-decoration: none;
+                        color: $resaltado;
+                        margin-left: 670px;
+                        font-size: 20px;
+                    }
+                    .tokernel:hover{
+                        color: white;
+                    }
+                }
+            }
+
+
+
+            .lastprojectsbutton{
+                color: $resaltado;
+                background-color: transparent;
+                font-family: 'Barlow', sans-serif;
+                font-size: 20px;
+                border: solid 3px $resaltado;
+                border-radius: 7px;
+                height: 40px;
+                width: 155px;
+                margin-top: 10px;
+                margin-left: 500px;
+            }
+            .lastprojectsbutton:hover{
+                background-color: $resaltado;
+                color: white;
+                cursor: pointer;
+            }
+            .gostart{
+                float: left;
+                a{
+                    text-decoration: none;
+                }
+                h3{
+                    font-family: 'Barlow', sans-serif;
+                    color: $resaltado;
+                    margin-top: 20px;
+                    margin-left: 50px;
+                }
+            }
+        }
+    }
+
+    #skills{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        #skillstitle{
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
+            font-size: 127px;
+            color: $texto;
+            opacity: 20%;
+            position: absolute;
+            top: 1220px;
+            left: 1050px;
+        }
+        #skillswrap{
+            background-color: black;
+            box-shadow: 0px 0px 300px 40px black;
+            z-index: 2;
+            height: 0px;
+            width: 1300px;
+            position: absolute;
+            border-radius: 300px;
+            top: 1350px;
+            left: 50%;
+            margin-left: -650px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: space-around;
+            .tarjeta{
+                height: 550px;
+                box-shadow: 0px 0px 50px 0px black;
+                width: 400px;
+                background-color: #26262A;
+                margin-left: 30px;
+                border-radius: 20px;
+                ul{
+                    .main{
+                        color: $resaltado;
+                        margin-top: 30px;
+                    }
+                    .primero{
+                        margin-top: 30px;
+                        margin-left: 90px;
+                    }
+                    .margen90{
+                        margin-left: 90px;
+                    }
+                    .espacio{
+                        margin-left: 100px;
+                    }
+                    li{
+                        list-style: none;
+                        margin-left: 80px;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 20px;
+                        
+                    }
+                }
+                .tarjetatitulo{
+                    font-family: 'Dancing Script', cursive;
+                    font-size: 40px;
+                    color: $resaltado;
+                    margin-top: 15px;
+                    margin-left: 55px;
+                }
+                #frontend{
+                    margin-left: 70px;
+                }
+                #backend{
+                    margin-left: 75px;
+                }
+                #others{
+                    margin-left: 100px;
+                }
+            }
+        }
+        #fromskillstostart{
+            position: absolute;
+            top: 1930px;
+            left: 140px;
+            color: $resaltado;
+            a{
+                text-decoration: none;  
+            }
+            h3{
+                font-family: 'Barlow', sans-serif;
+                color: $resaltado;
+            }
+        }
+    }
+
+
+    #aboutme{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        #aboutmetitle{
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
+            font-size: 127px;
+            color: $texto;
+            opacity: 20%;
+            position: absolute;
+            top: 2270px;
+            left: 150px;
+        }
+        #aboutmewrap{
+            position: absolute;
+            z-index: 3;
+            left: 300px;
+            top: 2400px;
+            height: 495px;
+            width: 900px;
+            background-color: #26262A;
+            box-shadow: 0px 0px 300px 40px black;
+            border-radius: 20px;
+            text-align: center;
+            #aboutmetextwrap{
+                margin: 0px auto;
+                background-color: transparent;
+                text-align: left;
+                height: 460px;
+                width: 700px;
+                margin-top: 50px;
+                .resaltar{
+                    color: $resaltado;
+                }
+                h1{
+                    font-family: 'Poppins', sans-serif;
+                    color: $texto;
+                    margin-top: 20px;
+                }
+                p{
+                    font-family: 'Montserrat', sans-serif;
+                    color: $texto;
+                    margin-top: 20px;
+                    font-size: 21px;
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+                a{
+                    text-decoration: none;
+                }
+                #fromabouttostart{
+                    margin-top: 30px;
+                    a{
+                        h3{
+                            font-family: 'Barlow', sans-serif;
+                            color: $resaltado;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #contactme{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        #contactmetitle{
+            font-family: 'Poppins', sans-serif;
+            z-index: 1;
+            font-size: 127px;
+            color: $texto;
+            opacity: 20%;
+            position: absolute;
+            top: 3370px;
+            left: 800px;
+        }
+        #contactmewrap{
+            position: absolute;
+            z-index: 3;
+            left: 300px;
+            top: 3500px;
+            height: 495px;
+            width: 900px;
+            background-color: transparent;
+            border-radius: 20px;
+            text-align: center;
+        }
+        input, select, textarea{
+            color: #757575;
+        }
+        #name{
+            width: 380px;
+            height: 40px;
+            background-color: transparent;
+            border: 3px solid $resaltado;
+            margin-top: 50px;
+            border-radius: 20px;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        #name:focus{
+            outline-width: 0;
+        }
+        #email{
+            width: 380px;
+            height: 40px;
+            background-color: transparent;
+            border: 3px solid $resaltado;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 5px;
+            padding-left: 15px;
+        }
+        #email:focus{
+            outline-width: 0;
+        }
+        #message{
+            width: 380px;
+            height: 200px;
+            background-color: transparent;
+            border: 3px solid $resaltado;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-top: 10px;
+        }
+        #message:focus{
+            outline-width: 0;
+        }
+        #contactbutton{
+            font-family: 'Barlow', sans-serif;
+            color: $resaltado;
+            background-color: transparent;
+            border: 2px solid $resaltado;
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-left: 185px;
+        }
+        #contactbutton:hover{
+            cursor: pointer;
+            background-color: $resaltado;
+            color: white;
+        }
+        #fromcontacttostart{
+            float: left;
+            margin-left: 250px;
+            margin-top: 50px;
+            a{
+                text-decoration: none;
+                h3{
+                    color: $resaltado;
+                    font-family: 'Barlow', sans-serif;
+                }
+            }
+        }
+        #divboton{
+            display: flex;
+        }
+    }
+
+
+
+
+
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: #19181A;
+        position: absolute;
+        top: 4900px;
+        display: flex;
+        a{
+            height: 70px;
+        }
+        #redes{
+            width: 300px;
+            height: 100px;
+            margin: 0px;
+            display: flex;
+            margin-left: 620px;
+            #github{
+                width: 40px;
+                height: 40px;
+                border: 0px;
+                align-self: center;
+                margin-top: 30px;
+                margin-left: 30px;
+                -webkit-transition: -webkit-transform .5s ease-in-out;
+                transition:         transform .5s ease-in-out;
+            }
+            #github:hover{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            #linkedin{
+                width: 40px;
+                height: 40px;
+                border: 0px;
+                align-self: center;
+                margin-top: 30px;
+                margin-left: 30px;
+                -webkit-transition: -webkit-transform .5s ease-in-out;
+                transition:         transform .5s ease-in-out;
+            }
+            #linkedin:hover{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            #kaggle{
+                width: 40px;
+                height: 40px;
+                border: 0px;
+                align-self: center;
+                margin-top: 30px;
+                margin-left: 30px;
+                -webkit-transition: -webkit-transform .5s ease-in-out;
+                transition:         transform .5s ease-in-out;
+            }
+            #kaggle:hover{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+            #buttonwraper{
+                height: 150px;
+                margin-left: 70px;
+                .button{
+                    float: right;
+                    width: 180px;
+                    margin-top: 50px;
+                    height: 60px;
+                    background-color: transparent;
+                    border: solid 3px $resaltado;
+                    border-radius: 7px;
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 20px;
+                    color: $resaltado;
+                }
+                .button:hover{
+                    background-color: $resaltado;
+                    color: white;
+                    cursor: pointer;
+                }
+
+            }
+        }
+        #copywrite{
+            color: $resaltado;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-left: 370px;
+        }
+    }
+}

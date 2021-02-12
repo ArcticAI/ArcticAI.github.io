@@ -1,0 +1,780 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #26262A;
+}
+
+body #landing {
+  height: 100%;
+  width: 100%;
+}
+
+body #landing header {
+  background-color: #19181A;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #landing header h1 a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  width: 280px;
+  font-size: 34px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 30px;
+  color: #ccc;
+}
+
+body #landing header nav {
+  width: 800px;
+  margin: 0px;
+}
+
+body #landing header nav ul {
+  margin-left: 455px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 650px;
+  height: 60px;
+}
+
+body #landing header nav ul li {
+  list-style: none;
+}
+
+body #landing header nav ul li a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body #landing header nav ul li a:hover {
+  color: #36787B;
+}
+
+body #landing #sublanding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #landing #sublanding #contenedorpresentacion {
+  display: block;
+  margin-top: 130px;
+  height: 335px;
+  width: 463px;
+  margin-left: 150px;
+}
+
+body #landing #sublanding #contenedorpresentacion #resaltado {
+  color: #36787B;
+}
+
+body #landing #sublanding #contenedorpresentacion .presentacion {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 70px;
+}
+
+body #landing #sublanding #contenedorpresentacion #presentacionsub {
+  font-family: 'Barlow', sans-serif;
+  color: #ccc;
+  font-size: 34px;
+}
+
+body #landing #sublanding #logo {
+  display: block;
+  margin-right: 100px;
+  margin-top: 60px;
+  max-width: 45%;
+  max-height: 45%;
+  opacity: 0.65;
+}
+
+body #landing #sublanding #redes {
+  width: 300px;
+  height: 115px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #landing #sublanding #redes #github {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 67px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #landing #sublanding #redes #github:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #landing #sublanding #redes #linkedin {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 67px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #landing #sublanding #redes #linkedin:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #landing #sublanding #redes #kaggle {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 67px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #landing #sublanding #redes #kaggle:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #landing #sublanding #redes #buttonwraper {
+  height: 150px;
+  margin-left: 70px;
+}
+
+body #landing #sublanding #redes #buttonwraper .button {
+  float: right;
+  width: 180px;
+  margin-top: 50px;
+  height: 60px;
+  background-color: transparent;
+  border: solid 3px #36787B;
+  border-radius: 7px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #36787B;
+}
+
+body #landing #sublanding #redes #buttonwraper .button:hover {
+  background-color: #36787B;
+  color: white;
+  cursor: pointer;
+}
+
+body #myprojects {
+  position: relative;
+  display: block;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+body #myprojects #myprojectstitle {
+  position: absolute;
+  z-index: 2;
+  left: 140px;
+  top: 165px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 127px;
+  color: #ccc;
+  opacity: 20%;
+}
+
+body #myprojects #myprojectswrap {
+  position: absolute;
+  z-index: 3;
+  left: 300px;
+  top: 300px;
+  height: 570px;
+  width: 900px;
+  background-color: #26262A;
+  -webkit-box-shadow: 0px 0px 300px 40px black;
+          box-shadow: 0px 0px 300px 40px black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body #myprojects #myprojectswrap #lastprojects {
+  font-family: 'Dancing Script', cursive;
+  color: #36787B;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+body #myprojects #myprojectswrap #projectlist {
+  margin: 0px auto;
+  background-color: #26262A;
+  height: 420px;
+  width: 800px;
+  margin-top: 20px;
+}
+
+body #myprojects #myprojectswrap #projectlist .project {
+  background-color: #26262A;
+  width: 800px;
+  height: 100px;
+  text-align: start;
+  border-bottom: 1px solid #36787B;
+}
+
+body #myprojects #myprojectswrap #projectlist .project a {
+  text-decoration: none;
+}
+
+body #myprojects #myprojectswrap #projectlist .project a .projecttitle {
+  color: #36787B;
+  font-family: 'Poppins', sans-serif;
+}
+
+body #myprojects #myprojectswrap #projectlist .project a .projecttitle:hover {
+  color: white;
+}
+
+body #myprojects #myprojectswrap #projectlist .project .projectdescription {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+body #myprojects #myprojectswrap #projectlist .project .togithub {
+  text-decoration: none;
+  color: #36787B;
+  float: right;
+  font-size: 20px;
+}
+
+body #myprojects #myprojectswrap #projectlist .project .togithub:hover {
+  color: white;
+}
+
+body #myprojects #myprojectswrap #projectlist .project .tokernel {
+  text-decoration: none;
+  color: #36787B;
+  margin-left: 670px;
+  font-size: 20px;
+}
+
+body #myprojects #myprojectswrap #projectlist .project .tokernel:hover {
+  color: white;
+}
+
+body #myprojects #myprojectswrap .lastprojectsbutton {
+  color: #36787B;
+  background-color: transparent;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  border: solid 3px #36787B;
+  border-radius: 7px;
+  height: 40px;
+  width: 155px;
+  margin-top: 10px;
+  margin-left: 500px;
+}
+
+body #myprojects #myprojectswrap .lastprojectsbutton:hover {
+  background-color: #36787B;
+  color: white;
+  cursor: pointer;
+}
+
+body #myprojects #myprojectswrap .gostart {
+  float: left;
+}
+
+body #myprojects #myprojectswrap .gostart a {
+  text-decoration: none;
+}
+
+body #myprojects #myprojectswrap .gostart h3 {
+  font-family: 'Barlow', sans-serif;
+  color: #36787B;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+body #skills {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #skills #skillstitle {
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+  font-size: 127px;
+  color: #ccc;
+  opacity: 20%;
+  position: absolute;
+  top: 1220px;
+  left: 1050px;
+}
+
+body #skills #skillswrap {
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 300px 40px black;
+          box-shadow: 0px 0px 300px 40px black;
+  z-index: 2;
+  height: 0px;
+  width: 1300px;
+  position: absolute;
+  border-radius: 300px;
+  top: 1350px;
+  left: 50%;
+  margin-left: -650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+body #skills #skillswrap .tarjeta {
+  height: 550px;
+  -webkit-box-shadow: 0px 0px 50px 0px black;
+          box-shadow: 0px 0px 50px 0px black;
+  width: 400px;
+  background-color: #26262A;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+
+body #skills #skillswrap .tarjeta ul .main {
+  color: #36787B;
+  margin-top: 30px;
+}
+
+body #skills #skillswrap .tarjeta ul .primero {
+  margin-top: 30px;
+  margin-left: 90px;
+}
+
+body #skills #skillswrap .tarjeta ul .margen90 {
+  margin-left: 90px;
+}
+
+body #skills #skillswrap .tarjeta ul .espacio {
+  margin-left: 100px;
+}
+
+body #skills #skillswrap .tarjeta ul li {
+  list-style: none;
+  margin-left: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+body #skills #skillswrap .tarjeta .tarjetatitulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: #36787B;
+  margin-top: 15px;
+  margin-left: 55px;
+}
+
+body #skills #skillswrap .tarjeta #frontend {
+  margin-left: 70px;
+}
+
+body #skills #skillswrap .tarjeta #backend {
+  margin-left: 75px;
+}
+
+body #skills #skillswrap .tarjeta #others {
+  margin-left: 100px;
+}
+
+body #skills #fromskillstostart {
+  position: absolute;
+  top: 1930px;
+  left: 140px;
+  color: #36787B;
+}
+
+body #skills #fromskillstostart a {
+  text-decoration: none;
+}
+
+body #skills #fromskillstostart h3 {
+  font-family: 'Barlow', sans-serif;
+  color: #36787B;
+}
+
+body #aboutme {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #aboutme #aboutmetitle {
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+  font-size: 127px;
+  color: #ccc;
+  opacity: 20%;
+  position: absolute;
+  top: 2270px;
+  left: 150px;
+}
+
+body #aboutme #aboutmewrap {
+  position: absolute;
+  z-index: 3;
+  left: 300px;
+  top: 2400px;
+  height: 495px;
+  width: 900px;
+  background-color: #26262A;
+  -webkit-box-shadow: 0px 0px 300px 40px black;
+          box-shadow: 0px 0px 300px 40px black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap {
+  margin: 0px auto;
+  background-color: transparent;
+  text-align: left;
+  height: 460px;
+  width: 700px;
+  margin-top: 50px;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap .resaltar {
+  color: #36787B;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap p {
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc;
+  margin-top: 20px;
+  font-size: 21px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap a {
+  text-decoration: none;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap #fromabouttostart {
+  margin-top: 30px;
+}
+
+body #aboutme #aboutmewrap #aboutmetextwrap #fromabouttostart a h3 {
+  font-family: 'Barlow', sans-serif;
+  color: #36787B;
+}
+
+body #contactme {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #contactme #contactmetitle {
+  font-family: 'Poppins', sans-serif;
+  z-index: 1;
+  font-size: 127px;
+  color: #ccc;
+  opacity: 20%;
+  position: absolute;
+  top: 3370px;
+  left: 800px;
+}
+
+body #contactme #contactmewrap {
+  position: absolute;
+  z-index: 3;
+  left: 300px;
+  top: 3500px;
+  height: 495px;
+  width: 900px;
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+
+body #contactme input, body #contactme select, body #contactme textarea {
+  color: #757575;
+}
+
+body #contactme #name {
+  width: 380px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid #36787B;
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+body #contactme #name:focus {
+  outline-width: 0;
+}
+
+body #contactme #email {
+  width: 380px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid #36787B;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+body #contactme #email:focus {
+  outline-width: 0;
+}
+
+body #contactme #message {
+  width: 380px;
+  height: 200px;
+  background-color: transparent;
+  border: 3px solid #36787B;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+body #contactme #message:focus {
+  outline-width: 0;
+}
+
+body #contactme #contactbutton {
+  font-family: 'Barlow', sans-serif;
+  color: #36787B;
+  background-color: transparent;
+  border: 2px solid #36787B;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 185px;
+}
+
+body #contactme #contactbutton:hover {
+  cursor: pointer;
+  background-color: #36787B;
+  color: white;
+}
+
+body #contactme #fromcontacttostart {
+  float: left;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+body #contactme #fromcontacttostart a {
+  text-decoration: none;
+}
+
+body #contactme #fromcontacttostart a h3 {
+  color: #36787B;
+  font-family: 'Barlow', sans-serif;
+}
+
+body #contactme #divboton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #footer {
+  width: 100%;
+  height: 100px;
+  background-color: #19181A;
+  position: absolute;
+  top: 4900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #footer a {
+  height: 70px;
+}
+
+body #footer #redes {
+  width: 300px;
+  height: 100px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 620px;
+}
+
+body #footer #redes #github {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #footer #redes #github:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #footer #redes #linkedin {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #footer #redes #linkedin:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #footer #redes #kaggle {
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 30px;
+  margin-left: 30px;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+body #footer #redes #kaggle:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+body #footer #redes #buttonwraper {
+  height: 150px;
+  margin-left: 70px;
+}
+
+body #footer #redes #buttonwraper .button {
+  float: right;
+  width: 180px;
+  margin-top: 50px;
+  height: 60px;
+  background-color: transparent;
+  border: solid 3px #36787B;
+  border-radius: 7px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  color: #36787B;
+}
+
+body #footer #redes #buttonwraper .button:hover {
+  background-color: #36787B;
+  color: white;
+  cursor: pointer;
+}
+
+body #footer #copywrite {
+  color: #36787B;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 370px;
+}
+/*# sourceMappingURL=copiar.css.map */

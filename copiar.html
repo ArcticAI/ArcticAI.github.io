@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javier Martínez</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="landing">
+      <header>
+        <h1 id="top"><a href="index.html">Javier Martínez</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#myprojectstitle">MY PROJECTS</a></li>
+            <li><a href="#skillstitle">SKILLS</a></li>
+            <li><a href="#aboutmetitle">ABOUT ME</a></li>
+            <li><a href="#contactmetitle">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="sublanding">
+        <div id="contenedorpresentacion">
+          <span class="presentacion">Hi</span><br />
+          <span class="presentacion">I´m </span>
+          <span class="presentacion" id="resaltado">Javier</span>
+          <span class="presentacion">,</span><br />
+          <span class="presentacion">Data Scientist.</span><br />
+          <br />
+          <span id="presentacionsub">Data Scientist & Web Developer</span>
+
+          <div id="redes">
+            <a
+              href="https://www.linkedin.com/in/javier-martinez-delgado"target="_blank"
+              ><img id="linkedin" src="img/In.svg" alt="linkedIn"
+            /></a>
+            <a href="https://github.com/ArcticAI" target="_blank"
+              ><img id="github" src="img/githubwhite.svg" alt="GitHub"
+            /></a>
+            <a href="https://www.kaggle.com/arcticai" target="_blank"
+              ><img id="kaggle" src="img/kaggle.svg" alt="Kaggle"
+            /></a>
+            <form id="buttonwraper" action="#myprojectstitle">
+              <input class="button" type="submit" value="MY PROJECTS" />
+            </form>
+          </div>
+        </div>
+
+        <img
+          id="logo"
+          src="img/fenixparapng.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+
+    <div id="myprojects">
+      <h1 id="myprojectstitle">PROJECTS</h1>
+      <div id="myprojectswrap">
+        <h2 id="lastprojects">Last Projects</h2>
+
+        <!-- ######################################################################################################################################## -->
+        <div id="projectlist">
+          <div class="project">
+            <a href="https://arcticai.github.io/titanic" target="_blank"
+              ><h4 class="projecttitle">Titanic survival prediction</h4></a
+            >
+            <p class="projectdescription">
+              In this project we will predict the survival rate of the passengers in the Titanic shipwreck from features like the family size, age, fare, sex, cabin and more. We compare the best models for this prediction and the best params for the model obtaining a 0.834
+            </p>
+            <a
+              href="https://www.kaggle.com/arcticai/titanic-shipwreck-survival-prediction"
+              class="tokernel"
+              target="_blank"
+              >Kernel</a
+            >
+            <a
+              href="https://github.com/arcticai/titanic"
+              class="togithub"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+
+        </div>
+        <!-- ######################################################################################################################################## -->
+
+        <div class="gostart">
+          <a href="#top"><h3 class="gostarth3">< Go to start</h3></a>
+        </div>
+        <form id="buttonwraper" action="allprojects.html">
+          <input
+            class="lastprojectsbutton"
+            type="submit"
+            value="ALL PROJECTS"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div id="skills">
+      <h1 id="skillstitle">SKILLS</h1>
+      <div id="skillswrap">
+        <div class="tarjeta">
+          <h4 class="tarjetatitulo">Data Science</h4>
+          <ul>
+            <li class="main">Python</li>
+            <li class="espacio">-Pandas</li>
+            <li class="espacio">-Numpy</li>
+            <li class="espacio">-Scipy</li>
+            <li class="espacio">-Matplotlib</li>
+            <li class="espacio">-Statsmodels</li>
+            <li class="espacio">-SKlearn</li>
+            <li class="espacio">-TensorFlow</li>
+            <li class="espacio">-Keras</li>
+            <li class="espacio">-Seaborn</li>
+            <li class="main">R</li>
+            <li class="espacio">-ggplot2</li>
+            <li class="espacio">-Shiny</li>
+            <li class="espacio">-Caret</li>
+            <li class="espacio">-RandomForest</li>
+            <li class="espacio">-FNN</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta">
+          <h4 class="tarjetatitulo" id="frontend">Front-End</h4>
+          <ul>
+            <li class="main">HTML</li>
+            <li class="main">CSS</li>
+            <li class="espacio">-SASS</li>
+            <li class="espacio">-LESS</li>
+            <li class="espacio">-Bootstrap</li>
+            <li class="main">JavaScript</li>
+            <li class="espacio">-TypeScript</li>
+            <li class="espacio">-jQuery</li>
+            <li class="main">Angular</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta">
+          <h4 class="tarjetatitulo" id="backend">Back-End</h4>
+          <ul>
+            <li class="main">NodeJS</li>
+            <li class="main">PHP</li>
+            <li class="espacio">-Symfony</li>
+            <li class="espacio">-Laravel</li>
+            <li class="main">Database</li>
+            <li class="espacio">-MongoDB</li>
+            <li class="espacio">-MySQL</li>
+            <li class="main">Python</li>
+            <li class="espacio">-Django</li>
+            <li class="espacio">-Flask</li>
+            <li class="main">Wordpress</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta">
+          <h4 class="tarjetatitulo" id="others">Others</h4>
+          <ul>
+            <li class="primero">Tableau</li>
+            <li class="margen90">Power BI</li>
+            <li class="margen90">Java</li>
+            <li class="margen90">C#</li>
+            <li class="margen90">Excel</li>
+            <li class="margen90">Illustrator</li>
+            <li class="margen90">Figma</li>
+            <li class="margen90">Photoshop</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="gostart" id="fromskillstostart">
+        <a href="#top"><h3 class="gostarth3">< Go to start</h3></a>
+      </div>
+    </div>
+
+
+    <div id="aboutme">
+      <h1 id="aboutmetitle">ABOUT ME</h1>
+      <div id="aboutmewrap">
+        <div id="aboutmetextwrap">
+          <h1>const <span class="resaltar">Javier</span> =</h1>
+          <p>I´m a <span class="resaltar">Data Science</span> and <span class="resaltar">Web Development</span> student, who is based on the Canary Islands (Spain). I have studied at the University of Salamanca, where I have also worked as <span class="resaltar">data analyst</span> for the ecology department.</p>
+          <p>Take a look at my <a href="https://www.linkedin.com/in/javier-martinez-delgado" target="_blank" class="resaltar">LinkedIn</a>. I´m available for recruitment processes. You can contact me at LinkedIn, at the contact form or by e-mail at <span class="resaltar">javiermartinezdev@gmail.com</span></p>
+          <h1>;</h1>
+          <div class="gostart" id="fromabouttostart">
+            <a href="#top"><h3 class="gostarth3">< Go to start</h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="contactme">
+      <h1 id="contactmetitle">CONTACT</h1>
+      <div id="contactmewrap">
+        <form action="mailto:javiermartinezdev@gmail.com" method="get" enctype="text/plain">
+          <div>
+            <label for="name">
+              <input type="text" name="name" id="name" placeholder="Full Name"/>
+            </label>
+          </div>
+          <div>
+            <label for="email">
+              <input type="text" name="email" id="email" placeholder="example@example.com"/>
+            </label>
+          </div>
+          <div>
+            <textarea name="message" rows="12" cols="35" id="message" placeholder="Message"></textarea>
+          </div>
+          <div id="divboton">
+            <div class="gostart" id="fromcontacttostart">
+              <a href="#top"><h3 class="gostarth3">< Go to start</h3></a>
+            </div>
+            <input type="submit" name="submit" value="CONTACT" id="contactbutton"/>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div id="redes">
+        <a
+        href="https://www.linkedin.com/in/javier-martinez-delgado"target="_blank"
+        ><img id="linkedin" src="img/In.svg" alt="linkedIn"
+        /></a>
+        <a href="https://github.com/ArcticAI" target="_blank"
+        ><img id="github" src="img/githubwhite.svg" alt="GitHub"
+        /></a>
+        <a href="https://www.kaggle.com/arcticai" target="_blank"
+        ><img id="kaggle" src="img/kaggle.svg" alt="Kaggle"
+        /></a>
+      </div>
+      <h4 id="copywrite">Javier Martínez &copy;</h4>
+    </footer>
+
+  </body>
+</html>
