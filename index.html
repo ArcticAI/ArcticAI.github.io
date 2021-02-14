@@ -12,33 +12,48 @@
 
   <!--HEADER-->
   <header class="top h-16 flex w-auto">
-    <div class="w-4/12 h-16 poppins text-3xl pl-10 flex items-center">
+    <div class="lg:w-4/12 h-16 poppins text-xl lg:text-3xl pl-6 lg:pl-10 flex items-center">
       <h1><a href="#" class="ccc">Javier Martínez</a></h1>
     </div>
-    <nav class=" w-8/12 flex items-center">
-      <ul class="inline-flex space-x-14 ml-10 pl-64">
-        <li><a href="#aboutme" class="roboto ccc text-2xl harctic">ABOUT ME</a></li>
-        <li><a href="#projects" class="roboto ccc text-2xl harctic">PROJECTS</a></li>
-        <li><a href="#skills" class="roboto ccc text-2xl harctic">SKILLS</a></li>
-        <li><a href="#contactform" class="roboto ccc text-2xl harctic">CONTACT</a></li>
+    <nav class="flex flex-wrap items-center justify-between lg:hidden float-right h-16">
+      <!-- hamburger -->
+      <div class="flex md:hidden">
+        <button id="hamburger" class="flex w-4/12 outline-none">
+          <img class="toggle block ml-32 outline-none" src="https://img.icons8.com/fluent-systems-regular/2x/menu-squared-2.png" width="40" height="40" />
+          <img class="toggle hidden ml-44 mt-3 outline-none" src="https://img.icons8.com/fluent-systems-regular/2x/close-window.png" width="40" height="40" />
+        </button>
+      </div>
+      <!-- links -->
+      <div class="toggle hidden md:flex w-full md:w-auto text-right text-bold mt-1 md:mt-0 md:border-none outline-none">        
+        <a href="#" class="block md:inline-block arctic px-2 py-2 md:border-none text-sm bnav mt-2.5">ABOUT ME</a>
+        <a href="#" class="block md:inline-block arctic px-3 py-2 md:border-none text-sm bnav">PROJECTS</a>
+        <a href="#" class="block md:inline-block arctic px-3 py-2 md:border-none text-sm bnav">SKILLS</a>
+        <a href="#" class="block md:inline-block arctic px-3 py-2 md:border-none text-sm bnav">CONTACT</a>
+      </div>
+    </nav>
+    <nav class=" lg:w-8/12 flex items-center">
+      <ul class="hidden lg:inline-flex lg:space-x-14 lg:ml-10 lg:pl-64">
+        <li><a href="#aboutme" class="roboto ccc lg:text-2xl harctic">ABOUT ME</a></li>
+        <li><a href="#projects" class="roboto ccc lg:text-2xl harctic">PROJECTS</a></li>
+        <li><a href="#skills" class="roboto ccc lg:text-2xl harctic">SKILLS</a></li>
+        <li><a href="#contactform" class="roboto ccc lg:text-2xl harctic">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
 
   <!--LANDING PAGE-->
-  <div class="h-screen flex pt-28">
-    <div class='pl-40 w-auto'>
-      <span class="ptsans main">Hi</span><br />
-      <span class="ptsans main">I´m </span>
-      <span class="ptsans main arctic" id="">Javier</span>
-      <span class="ptsans main">,</span><br />
-      <span class="ptsans main">Data Scientist.</span><br />
-      <br/>
-      <span class="barlow text-4xl ccc">Data Scientist & Web Developer</span><br>
+  <div class="h-auto lg:h-screen flex pt-12 lg:pt-28">
+    <div class='pl-12 lg:pl-40 w-auto'>
+      <span class="ptsans text-4xl lg:text-7xl">Hi</span><br />
+      <span class="ptsans text-4xl lg:text-7xl">I´m </span>
+      <span class="ptsans text-4xl lg:text-7xl arctic" id="">Javier</span>
+      <span class="ptsans text-4xl lg:text-7xl">,</span><br />
+      <span class="ptsans text-4xl lg:text-7xl">Data Scientist.</span><br><br class="hidden lg:inline">
+      <span class="barlow text-xl lg:text-4xl ccc">Data Scientist & Web Developer</span><br>
 
       <form action="#projects">
-        <input class="float-right bg-transparent mt-16 botonmain arctic py-3 px-5 rounded-full text-xl font-bold" type="submit" value="PROJECTS" />
+        <input class="float-right bg-transparent mt-4 lg:mt-16 botonmain arctic py-1 lg:py-3 px-2 lg:px-5 rounded-full text-l lg:text-xl font-bold" type="submit" value="PROJECTS" />
       </form>
     </div>
     <div class="ml-52 mt-16 hidden lg:block iconoportfolio">
@@ -49,16 +64,16 @@
 
   <!--ABOUT ME-->
   <div id="aboutme" class="h-screen w-auto flex items-center">
-    <div class="aboutme m-auto bordershadow rounded-3xl p-12">
-      <h1>const <span class="arctic">Javier</span> =</h1>
+    <div class="w-10/12 lg:w-8/12 h-auto lg:h-4/6 m-auto bordershadow rounded-3xl p-6 lg:p-12 montserrat text-lg lg:text-2xl">
+      <h1 class="poppins text-2xl lg:text-4xl">const <span class="arctic">Javier</span> =</h1>
       <br>
       <p>I´m a <span class="arctic">Data Science</span> and <span class="arctic">Web Development</span> student, who is based on the Canary Islands (Spain). I have studied at the University of Salamanca, where I have also worked as <span class="arctic">data analyst</span> for the ecology department.</p>
       <br>
       <p>Take a look at my <a href="https://www.linkedin.com/in/javier-martinez-delgado" target="_blank" class="arctic hover:text-white">LinkedIn</a>. I´m available for recruitment processes. You can contact me at LinkedIn, at the contact form or by e-mail at <span class="arctic">javisbs@gmail.com</span></p>
       <br>
-      <h1>;</h1>
+      <h1 class="poppins text-2xl lg:text-4xl">;</h1>
       <div>
-        <a href="#"><h3 class="arctic totop mt-5">< Go to start</h3></a>
+        <a href="#"><h3 class="arctic totop mt-5 barlow">< Go to start</h3></a>
       </div>
     </div>
   </div>
@@ -66,10 +81,10 @@
 
   <!--PROJECTS-->
   <div id="projects" class="h-screen w-auto flex items-center">
-    <div class="projects m-auto bordershadow rounded-3xl py-1 px-12">
+    <div class="projects w-10/12 lg:w-8/12 h-auto lg:pb-5 m-auto bordershadow rounded-3xl py-1 px-12">
       <h2 class="arctic text-center">Last Projects</h2>
 
-      <div class="project mt-5 pb-2 flex-nowrap">
+      <div class="project mt-7 lg:mt-5 pb-2 flex-wrap">
         <a href="https://arcticai.github.io/titanic" target="_blank">
           <h4 class="arctic hover:text-white">Titanic survival prediction</h4>
         </a>
@@ -89,7 +104,7 @@
       </div>
 
 
-      <div class="project mt-5 pb-2 flex-nowrap">
+      <div class="project mt-7 lg:mt-5 pb-2 flex-wrap">
         <a href="https://arcticai.github.io/titanic" target="_blank">
           <h4 class="arctic hover:text-white">Titanic survival prediction</h4>
         </a>
@@ -109,7 +124,7 @@
       </div>
 
 
-      <div class="project mt-5 pb-2 flex-nowrap">
+      <div class="project mt-7 lg:mt-5 pb-2 flex-nowrap">
         <a href="https://arcticai.github.io/titanic" target="_blank">
           <h4 class="arctic hover:text-white">Titanic survival prediction</h4>
         </a>
@@ -129,7 +144,7 @@
       </div>
       <div class="">
         <form action="#projects" class="float-right">
-          <input class=" bg-transparent botonmain arctic py-2 px-2 rounded-full text-l font-bold allprojects" type="submit" value="ALL PROJECTS" />
+          <input class=" bg-transparent botonmain arctic py-1 lg:py-2 px-1 lg:px-2 rounded-full text-sm lg:text-l font-bold allprojects" type="submit" value="ALL PROJECTS" />
         </form>
         <a href="#"><h3 class="arctic totop mt-16">< Go to start</h3></a>
       </div>
@@ -138,8 +153,8 @@
   </div>
 
   <!--SKILLS-->
-  <div class="h-screen w-auto items-center flex justify-around px-20 flex-wrap" id="skills">
-    <div class="tarjeta bordershadow rounded-2xl p-3">
+  <div class="h-screen w-auto items-center lg:flex lg:justify-around lg:px-20 lg:flex-wrap" id="skills">
+    <div class="tarjeta bordershadow rounded-2xl p-3 mt-80 lg:mt-10 m-auto">
       <h4 class="text-center arctic">Data Science</h4>
       <ul>
         <li class="arctic pt-5 pl-5">-Python</li><br>
@@ -149,7 +164,7 @@
         <li class="arctic pl-5">-Tableau</li>
       </ul>
     </div>
-    <div class="tarjeta bordershadow rounded-2xl p-3">
+    <div class="tarjeta bordershadow rounded-2xl p-3 m-auto mt-10 ">
       <h4 class="text-center arctic">Front-End</h4>
       <ul>
         <li class="arctic pt-5 pl-5">-HTML</li><br>
@@ -158,13 +173,13 @@
         <li class="arctic pl-5">-React</li><br>
       </ul>
     </div>
-    <div class="tarjeta bordershadow rounded-2xl p-3">
+    <div class="tarjeta bordershadow rounded-2xl p-3 m-auto mt-10">
        <h4 class="text-center arctic">Back-End</h4>
        <ul>
         <li class="arctic pt-5 pl-5">-Python</li>
       </ul>
     </div>
-    <div class="tarjeta bordershadow rounded-2xl p-3">
+    <div class="tarjeta bordershadow rounded-2xl p-3 m-auto mt-10">
       <h4 class="text-center arctic">Others</h4>
       <ul>
         <li class="arctic pt-5 pl-5">-Excel</li><br>
@@ -175,24 +190,26 @@
     </div>
 
   </div>
-  <div class="ml-28">
+  <div class="lg:ml-28">
     <a href="#"><h3 class="arctic totop skillstotop">< Go to start</h3></a>
   </div>
 
   <!--CONTACT-->
-  <div class="h-screen w-auto flex items-center mt-32" id="contactform">
-    <div class="w-3/6 h-96 m-auto">
+  <div class="h-screen w-auto flex items-center" id="contactform">
+    <div class="lg:w-3/6 lg:h-96 m-auto mt-44">
       <form action="" class="text-center">
-        <input type="text" id="fullname" name="fullname" placeholder="Name" class="formulario text-white bg-transparent py-3 px-3 rounded-3xl outline-none">
-        <input type="email" id="email" name="email" placeholder="Email" class="formulario text-white mt-5 bg-transparent py-3 px-3 rounded-3xl outline-none">
-        <textarea name="message" rows="8" cols="35" id="message" placeholder="Message" class="formulario text-white mt-5 bg-transparent py-3 px-3 rounded-3xl outline-none"></textarea><br>
-        <input type="submit" value="SEND" class="bg-transparent botonmain arctic py-1 px-5 rounded-3xl text-l font-bold float-right mr-32 mt-5">
-        <div class="float-left mt-32 ml-36">
+        <input type="text" id="fullname" name="fullname" placeholder="Name" class="formulario text-white bg-transparent py-1 lg:py-3 px-3 rounded-3xl outline-none">
+        <input type="email" id="email" name="email" placeholder="Email" class="formulario text-white mt-5 bg-transparent py-1 lg:py-3 px-3 rounded-3xl outline-none">
+        <textarea name="message" rows="8" cols="35" id="message" placeholder="Message" class="formulario text-white mt-5 bg-transparent py-1 lg:py-3 px-3 rounded-3xl outline-none"></textarea><br>
+        <input type="submit" value="SEND" class="bg-transparent botonmain arctic py-1 px-5 rounded-3xl text-l font-bold float-right mr-14 lg:mr-32 mt-5">
+        <div class="float-left mt-44 lg:mt-32 lg:ml-36">
           <a href="#"><h3 class="arctic totop skillstotop">< Go to start</h3></a>
         </div>
       </form>
     </div>
   </div>
 
+  <!-- JavaScript -->      
+  <script src="script.js"></script>
 </body>
 </html>
