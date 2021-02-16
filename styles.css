@@ -51,6 +51,22 @@ body .main {
   font-size: 70px;
 }
 
+body #linkedin,
+body #github,
+body #kaggle {
+  height: 30px;
+  width: 30px;
+}
+
+@media (min-width: 1024px) {
+  body #linkedin,
+  body #github,
+  body #kaggle {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 body .arctic {
   color: #0EDCF8;
 }
@@ -117,7 +133,7 @@ body #projects .totop {
 }
 
 body #projects .allprojects {
-  margin-top: -1rem;
+  margin-top: 5rem;
 }
 
 body #skills .tarjeta {

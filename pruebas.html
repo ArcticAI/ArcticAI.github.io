@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="top h-16 flex w-auto">
+    <div class="lg:w-4/12 h-16 poppins text-xl lg:text-3xl pl-6 lg:pl-10 flex items-center">
+      <h1><a href="#" class="ccc">Javier Martínez</a></h1>
+    </div>
+    <nav class="flex flex-wrap items-center float-right lg:hidden ml-32">
+      <button id="hamburger" class="border-none">
+        <img src="img/open burger.svg" width="40" height="40" class="block toggle">
+        <img src="img/close burger.svg" width="40" height="40" class="hidden toggle ml-12 mt-3">
+      </button>
+      <div class="toggle hidden text-center w-full">
+        <a href="#aboutme" class="arctic text-sm block py-2 mt-3">ABOUT ME</a>
+        <a href="#projects" class="arctic text-sm block bnav py-2">PROJECTS</a>
+        <a href="#skills" class="arctic text-sm block bnav py-2">SKILLS</a>
+        <a href="#contactform" class="arctic text-sm block bnav py-2">CONTACT</a>
+      </div>
+    </nav>
+
+    <nav class=" lg:w-8/12 flex items-center">
+      <ul class="hidden lg:inline-flex lg:space-x-14 lg:ml-10 lg:pl-64">
+        <li><a href="#aboutme" class="roboto ccc lg:text-2xl harctic">ABOUT ME</a></li>
+        <li><a href="#projects" class="roboto ccc lg:text-2xl harctic">PROJECTS</a></li>
+        <li><a href="#skills" class="roboto ccc lg:text-2xl harctic">SKILLS</a></li>
+        <li><a href="#contactform" class="roboto ccc lg:text-2xl harctic">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!--LANDING PAGE-->
+  <div class="h-auto lg:h-screen flex pt-12 lg:pt-28">
+    <div class='pl-12 lg:pl-40 w-auto'>
+      <span class="ptsans text-4xl lg:text-7xl">Hi</span><br />
+      <span class="ptsans text-4xl lg:text-7xl">I´m </span>
+      <span class="ptsans text-4xl lg:text-7xl arctic" id="">Javier</span>
+      <span class="ptsans text-4xl lg:text-7xl">,</span><br />
+      <span class="ptsans text-4xl lg:text-7xl">Data Scientist.</span><br><br class="hidden lg:inline">
+      <span class="barlow text-xl lg:text-4xl ccc">Data Scientist & Web Developer</span><br>
+
+
+      <form action="#projects">
+        <div class="flex float-left mt-4 lg:mt-16 space-x-6 lg:space-x-14">
+          <a href="https://www.linkedin.com/in/javier-martinez-delgado/" target="_blank">
+            <img src="img/linkedin-tile.svg" id="linkedin">
+          </a>
+          <a href="https://github.com/ArcticAI" target="_blank">
+            <img src="img/github-icon.svg" id="github">
+          </a>
+          <a href="https://www.kaggle.com/arcticai" target="_blank">
+            <img src="img/kaggle-icon.svg" id="kaggle">
+          </a>
+        </div>
+        <input
+          class="float-right bg-transparent mt-4 lg:mt-16 botonmain arctic py-1 lg:py-3 px-2 lg:px-5 rounded-full text-l lg:text-xl font-bold"
+          type="submit" value="PROJECTS" />
+      </form>
+    </div>
+    <div class="ml-52 mt-16 hidden lg:block iconoportfolio">
+      <img src="img/undraw_predictive_analytics_kf9n.svg" alt="Data scientist portfolio" class="iconoportfolio">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
