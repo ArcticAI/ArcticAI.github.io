@@ -133,11 +133,21 @@ body #projects .totop {
 }
 
 body #projects .allprojects {
-  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+@media (min-width: 1024px) {
+  body #projects .allprojects {
+    margin-left: 44rem;
+  }
+  body #projects .totop {
+    font-family: 'Barlow',sans-serif;
+    font-size: 18px;
+  }
 }
 
 body #skills .tarjeta {
-  height: 550px;
+  height: 500px;
   width: 220px;
   background-color: #26262A;
   font-family: 'Montserrat',sans-serif;
@@ -147,6 +157,19 @@ body #skills .tarjeta {
 body #skills .tarjeta h4 {
   font-family: 'Dancing Script',cursive;
   font-size: 40px;
+}
+
+body #skills .primeratarjeta {
+  margin-top: 35rem;
+}
+
+@media (min-width: 1024px) {
+  body #skills .tarjeta {
+    margin-top: 7rem;
+  }
+  body #skills .primeratarjeta {
+    margin-top: 7rem;
+  }
 }
 
 body #contactform .formulario {
